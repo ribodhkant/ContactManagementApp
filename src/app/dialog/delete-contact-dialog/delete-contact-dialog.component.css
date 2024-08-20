@@ -1,0 +1,15 @@
+.add-modal {
+    width: 500px;
+  }
+  
+  .mat-typography{
+    min-height: 50px;
+  }
+.popup-header {
+  position: relative;
+}
+span.popup-close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

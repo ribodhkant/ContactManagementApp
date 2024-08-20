@@ -1,0 +1,13 @@
+<div class="add-modal">
+    <div class="popup-header">
+      <h4 mat-dialog-title>Delete</h4>
+      <span class="popup-close-btn" mat-dialog-close><i class="fas fa-times"></i></span>
+    </div>
+      <mat-dialog-content class="mat-typography">
+        <div class="alert alert-danger">Are you sure you want to delete.</div>
+      </mat-dialog-content>
+      <mat-dialog-actions align="end">
+        <button class="btn btn-primary btn-sm" [mat-dialog-close]="true">Cancel</button> &nbsp; &nbsp;
+        <button type="button" (click)="deleteContact()" class="btn btn-danger btn-sm" cdkFocusInitial><i class="fas fa-trash-alt"></i> Delete</button>
+      </mat-dialog-actions>
+    </div>

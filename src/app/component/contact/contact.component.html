@@ -1,0 +1,29 @@
+&nbsp;&nbsp;<button type="button" class="btn btn-success editIcon mr-2" (click)="editContact('')"
+title="New"><span>New</span></button>
+<br><br>
+<div class="cutom-grid-scroll">
+    <ngx-datatable [rows]="contactList" class="material grid-min-height" [loadingIndicator]="loadingIndicator"
+        [columnMode]='"force"' [headerHeight]="50" [footerHeight]="50" [rowHeight]="40" [reorderable]="reorderable"
+        [limit]="10">
+        <ngx-datatable-column name="Id" prop='id'></ngx-datatable-column>
+        <ngx-datatable-column name="FirstName" prop='firstName'></ngx-datatable-column>
+        <ngx-datatable-column name="LastName" prop='lastName'></ngx-datatable-column>
+        <ngx-datatable-column name="Email" prop='email'></ngx-datatable-column>
+        <ngx-datatable-column name="Edit">
+            <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                <div class="btnBox">
+                    <button type="button" class="btn btn-primary btn-sm editIcon mr-2" (click)="editContact(row)"
+                        title="Edit"><span>Edit</span></button>                       
+                </div>
+            </ng-template>
+        </ngx-datatable-column>
+        <ngx-datatable-column name="Delete">
+            <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                <div class="btnBox">
+                    <button type="button" class="btn btn-danger btn-sm deleteIcon" (click)="deleteContact(row)" value="Delete"
+                        title="Delete"><span>Delete</span><i class="far fa-trash-alt"></i></button>
+                </div>
+            </ng-template>
+        </ngx-datatable-column>
+    </ngx-datatable>
+</div>

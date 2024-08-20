@@ -1,0 +1,469 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~@swimlane/ngx-datatable/index.css';
+@import '~@swimlane/ngx-datatable/themes/bootstrap.css';
+@import '~@swimlane/ngx-datatable/themes/material.css';
+@import '~@swimlane/ngx-datatable/themes/dark.css';
+@import '~@swimlane/ngx-datatable/assets/icons.css';
+.leftnav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    background-color: #4d4b49;
+    top: 0px
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none;
+
+}
+
+a:focus {
+    text-decoration: none;
+    outline: none
+}
+
+ul {
+    padding: 0px;
+    list-style: none
+}
+
+.dashboard {
+    margin-left: 250px
+}
+
+.dashHeading {
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+
+
+.dashControl {
+    margin-bottom: 20px;
+
+}
+
+
+
+.numberControl {
+    font-size: 50px
+}
+
+.dashboardControl {
+    width: 350px;
+    height: 150px;
+    border-radius: 7px;
+    color: #ffffff;
+    padding: 10px;
+    position: relative
+}
+
+.controlName {
+    font-size: 20px
+}
+
+.empControl {
+    background-color: #4287f5;
+}
+
+.dashControl ul li {
+    display: inline-block;
+    margin-right: 10px
+}
+
+
+.aquisition {
+    background-color: #32a852
+}
+
+
+.asset {
+    background-color: #ad3137
+}
+
+.report {
+    background-color: #b8aa32
+}
+
+.announControl {
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    margin-bottom: 10px
+}
+
+.announControl h4 {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+
+.announContent {
+    padding: 10px
+}
+
+
+
+.clear {
+    clear: both
+}
+
+
+.announControl h4 a {
+  width: 30px;
+  height: 30px;
+  background-color: #4287f5;
+  text-align: center;
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -5px;
+  border-radius: 4px; color: #ffffff;
+}
+
+.announControl h4 a span {
+    color: #fff;
+    line-height: 30px
+}
+
+.btn-primary {
+    background-color: #4287f5
+}
+
+.announControlBtnGroup {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    top: -7px;
+    right: 8px;
+}
+
+
+.announContent ul li a {
+    color: #948e8e;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+    font-size: 15px
+}
+
+.holidayControl {
+    color: #363434;
+    font-weight: bold
+}
+
+.announinnerContent {
+    padding: 10px;
+    border-left: 1px solid #eaeaea
+}
+
+
+.minHeight {
+    min-height: 370px !important;
+    padding: 10px
+}
+
+
+table {
+    border-collapse: separate
+}
+
+.schedule table thead tr:first-child th:nth-child(2) {
+    text-align: center
+}
+
+.schedule table thead tr:nth-child(2) th {
+    text-align: center
+}
+
+.schedule table tbody tr td {
+    border: 1px solid #eaeaea;
+    height: 100px;
+    width: 14.28%
+}
+
+
+.dateCheck {
+    background-color: #8a252a;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: 600;
+    position: relative;
+    top: 35px
+}
+
+.table>thead>tr>th {
+    border: none
+}
+
+
+.userImage {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%
+}
+
+.userImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.leftnav ul li:first-child a {
+    padding: 20px 10px;
+    display: block;
+    text-align: left;
+
+    margin: 0px 5px
+}
+
+
+.leftnav ul li:first-child a span:last-child {
+    color: #d8d8d8;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-left: 10px
+}
+
+
+.leftnav ul li:nth-child(2) {
+    padding: 20px 0px;
+    margin: 0px 5px;
+    border-bottom: 2px solid #5a5a5a;
+    border-top: 2px solid #5a5a5a;
+
+}
+
+.leftnav ul li:nth-child(2) p {
+    color: #b8b133;
+}
+
+.leftnav ul li:nth-child(2) p {
+    margin-bottom: 0px
+}
+
+
+.searchBarList a label {
+    border: 1px solid #5a5a5a;
+    position: relative;
+    border-radius: 6px;
+    width: 100%
+}
+
+
+.searchBarList a label input.form-control {
+    width: 80%;
+    background-color: #5e5a55;
+    display: inline-block;
+    border-radius: 0px;
+    outline: none;
+    border: 1px solid #5a5a5a;
+    color: #eaeaea
+}
+
+.searchBarList a label span {
+    position: absolute;
+    top: 6px;
+    right: 17px;
+    font-size: 20px;
+}
+
+.searchBarList {
+    padding: 20px 0px;
+    margin: 0px 5px
+}
+
+.searchBarList a {
+    color: #ffffff
+}
+
+
+.searchBarList a label input.form-control:focus {
+    box-shadow: none;
+
+}
+
+
+.darkColorContent {
+    position: relative;
+    bottom: -10px;
+    text-align: center;
+    display: block;
+    background-color: #3a7be3;
+    padding: 5px;
+    margin: 0px -10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.reqColor {
+    background-color: #2e9349
+}
+
+.assetColor {
+    background-color: #91383c
+}
+
+
+.reportColor {
+    background-color: #a99c33
+}
+
+
+
+.col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.bg-info, .bg-info>a {
+    color: #fff!important;
+}
+
+.bg-info {
+    background-color: #17a2b8!important;
+}
+
+.small-box {
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1px #00000020, 0 1px 3px #0003;
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.small-box>.inner {
+    padding: 10px;
+}
+.bg-success, .bg-success>a {
+    color: #fff!important;
+}
+
+.bg-success {
+    background-color: #28a745!important;
+}
+.bg-danger, .bg-danger>a {
+    color: #fff!important;
+}
+
+.bg-danger {
+    background-color: #dc3545!important;
+}
+.bg-warning, .bg-warning>a {
+    color: #1f2d3d!important;
+}
+
+.bg-warning {
+    background-color: #ffc107!important;
+}
+
+.small-box>.small-box-footer:hover {
+    background-color: #00000026;
+    color: #fff;
+}
+.small-box>.small-box-footer {
+    background-color: #0000001a;
+    color: #fffc;
+    display: block;
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+.bg-info, .bg-info>a {
+    color: #fff!important;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.ngx-datatable.material .datatable-header .datatable-header-cell
+{
+    background-color: #758177 !important ;
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+}
+
+section.minimize .logo {
+    min-width: 70px;
+    transition: all 0.3s ease-in-out;
+}
+section.minimize .inner-sidebar ul li a .hide-mini{
+ display: none!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+}
+
+.popup-close-btn {
+    color: red;
+}
+.k-required {
+    border-color: #ff0000;
+    border-radius: 4px;
+  }
+ .cutom-grid-scroll {
+     overflow-y: auto !important;
+ }
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #ffffff !important;
+  background-color: #007bff !important;
+}
+.nav-tabs .nav-link {
+  color: #333333;
+  background: #e7e7e7;
+}
+.ngx-datatable.material .datatable-body .datatable-body-row .datatable-body-cell {
+   padding: 0.4rem 1.2rem!important;
+}
+.cdk-overlay-pane {
+    margin-left: 130px;
+}
+input.btn {
+    cursor: pointer;
+}
+
+.curp {
+    cursor: pointer;
+  }
+  .hello {
+    background-color:rgba(255,255,255,.3);
+    backdrop-filter: blur(10px);
+  }
+  .custom-dialog >  mat-dialog-container {
+    background: var(--background);
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

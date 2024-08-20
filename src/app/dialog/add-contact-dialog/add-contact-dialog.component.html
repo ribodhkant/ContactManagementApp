@@ -1,0 +1,69 @@
+<div class="add-modal locationModal">
+    <div class="popup-header">
+        <h2 mat-dialog-title>
+            <b *ngIf="ct_Id== 0">Add</b> 
+          <b *ngIf="ct_Id > 0">Update</b> 
+          &nbsp;<b>Contact</b>
+            <span class="popup-close-btn float-end" mat-dialog-close><i class="fas fa-times"></i></span>
+        </h2>
+    </div>
+
+    <form [formGroup]="contactForm" (ngSubmit)="this.contactForm.valid && addContact()" autocomplete="off"  novalidate>
+        <mat-dialog-content class="mat-typography  entityDialog">
+         
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="location-form">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label> First Name <strong class="required-str">*</strong></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input formControlName="firstName" class="form-control" type="text" placeholder="First name"/>
+                                    </div>
+                                </div>
+                            </div><br>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label> Last Name <strong class="required-str">*</strong></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input formControlName="lastName" class="form-control" type="text" placeholder="Last name"/>
+                                    </div>
+                                </div>
+                            </div><br>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label> Email <strong class="required-str">*</strong></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" formControlName="email" class="form-control" placeholder="email"/>
+                                    </div>
+                                </div>
+                            </div><br>
+                        </div>
+                    </div>
+                </div> 
+        </mat-dialog-content>
+        <mat-dialog-actions align="end">
+            <input type="button" class="btn btn-danger btn-sm" mat-dialog-close="true" value="Cancel"> &nbsp;&nbsp;&nbsp;
+            <button type="submit" class="btn btn-success btn-sm" cdkFocusInitial [disabled] ="!this.contactForm.valid"><i class="fas fa-save"></i>
+                Save</button>
+        </mat-dialog-actions>
+
+    </form>
+
+</div>

@@ -1,0 +1,16 @@
+.k-required {
+    border-color: #ff0000;
+    border-radius: 6px;
+  }
+
+  .required-str{
+color: #ff0000;
+  }
+
+.add-modal.locationModal {
+  max-width: 700px;
+  min-width: 700px;
+}
+.delete-icon{
+  color: #ff0000;
+}
