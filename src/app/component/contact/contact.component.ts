@@ -15,8 +15,9 @@ export class ContactComponent implements OnInit {
   public contactList = [];
   loadingIndicator: boolean = false;
   reorderable: any;
+  searchText:any;
 
-  constructor(private contactService: ContactService, private dialogRef: MatDialog, private toastr: ToastrService) { }
+  constructor(private contactService: ContactService, private dialogRef: MatDialog, private toastr: ToastrService,) { }
 
   ngOnInit(): void {
     this.getContactList();

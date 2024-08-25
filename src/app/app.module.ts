@@ -8,13 +8,14 @@ import { AddContactDialogComponent } from './dialog/add-contact-dialog/add-conta
 import { ContactService } from 'src/service/contact.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { MatDialog, MatDialogClose, MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule} from 'ngx-toastr';
 import { DeleteContactDialogComponent } from './dialog/delete-contact-dialog/delete-contact-dialog.component';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
-  declarations: [AppComponent, ContactComponent, AddContactDialogComponent, DeleteContactDialogComponent],
+  declarations: [AppComponent, ContactComponent, AddContactDialogComponent, DeleteContactDialogComponent,FilterPipe],
   imports: [BrowserModule,AppRoutingModule,FormsModule,ReactiveFormsModule,HttpClientModule,MatDialogModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,

@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppComponent {
-
+imagePath:any;
  
   constructor() {
+    this.imagePath = "../image/alogo.png";
   }
 
   ngOnInit() {
-
   }
 
 

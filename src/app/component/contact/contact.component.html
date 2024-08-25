@@ -1,10 +1,17 @@
-&nbsp;&nbsp;<button type="button" class="btn btn-success editIcon mr-2" (click)="editContact('')"
-title="New"><span>New</span></button>
-<br><br>
+<div class="row">
+    <div class="col-md-9">
+        &nbsp;<button type="button" class="btn btn-success" (click)="editContact('')"
+            title="New"><span>New</span></button>
+    </div>
+    <div class="col-md-3">
+    <input type="search" class="form-control" placeholder="Search" [(ngModel)]="searchText">
+    </div>
+</div><br>
+
 <div class="cutom-grid-scroll">
-    <ngx-datatable [rows]="contactList" class="material grid-min-height" [loadingIndicator]="loadingIndicator"
-        [columnMode]='"force"' [headerHeight]="50" [footerHeight]="50" [rowHeight]="40" [reorderable]="reorderable"
-        [limit]="10">
+    <ngx-datatable [rows]="contactList | filter:searchText" class="material grid-min-height"
+        [loadingIndicator]="loadingIndicator" [columnMode]='"force"' [headerHeight]="50" [footerHeight]="50"
+        [rowHeight]="40" [reorderable]="reorderable" [limit]="10">
         <ngx-datatable-column name="Id" prop='id'></ngx-datatable-column>
         <ngx-datatable-column name="FirstName" prop='firstName'></ngx-datatable-column>
         <ngx-datatable-column name="LastName" prop='lastName'></ngx-datatable-column>
@@ -13,15 +20,15 @@ title="New"><span>New</span></button>
             <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
                 <div class="btnBox">
                     <button type="button" class="btn btn-primary btn-sm editIcon mr-2" (click)="editContact(row)"
-                        title="Edit"><span>Edit</span></button>                       
+                        title="Edit"><span>Edit</span></button>
                 </div>
             </ng-template>
         </ngx-datatable-column>
         <ngx-datatable-column name="Delete">
             <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
                 <div class="btnBox">
-                    <button type="button" class="btn btn-danger btn-sm deleteIcon" (click)="deleteContact(row)" value="Delete"
-                        title="Delete"><span>Delete</span><i class="far fa-trash-alt"></i></button>
+                    <button type="button" class="btn btn-danger btn-sm deleteIcon" (click)="deleteContact(row)"
+                        value="Delete" title="Delete"><span>Delete</span><i class="far fa-trash-alt"></i></button>
                 </div>
             </ng-template>
         </ngx-datatable-column>
